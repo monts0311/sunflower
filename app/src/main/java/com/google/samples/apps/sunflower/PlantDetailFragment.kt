@@ -34,6 +34,7 @@ import com.google.android.material.snackbar.Snackbar
 import com.google.samples.apps.sunflower.PlantDetailFragment.Callback
 import com.google.samples.apps.sunflower.data.Plant
 import com.google.samples.apps.sunflower.databinding.FragmentPlantDetailBinding
+import com.google.samples.apps.sunflower.utilities.Log
 import com.google.samples.apps.sunflower.viewmodels.PlantDetailViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -50,7 +51,7 @@ class PlantDetailFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
+        Log.i("")
         val binding = DataBindingUtil.inflate<FragmentPlantDetailBinding>(
             inflater,
             R.layout.fragment_plant_detail,

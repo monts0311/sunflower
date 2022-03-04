@@ -18,12 +18,16 @@ package com.google.samples.apps.sunflower
 
 import android.app.Application
 import androidx.work.Configuration
+import com.google.samples.apps.sunflower.utilities.Log
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
 class MainApplication : Application(), Configuration.Provider {
-    override fun getWorkManagerConfiguration(): Configuration =
-                Configuration.Builder()
-                        .setMinimumLoggingLevel(if (BuildConfig.DEBUG) android.util.Log.DEBUG else android.util.Log.ERROR)
-                        .build()
+    override fun getWorkManagerConfiguration(): Configuration {
+        Log.i("")
+        return Configuration.Builder()
+            .setMinimumLoggingLevel(if (BuildConfig.DEBUG) android.util.Log.DEBUG else android.util.Log.ERROR)
+            .build()
+    }
+
 }

@@ -27,6 +27,7 @@ import com.google.samples.apps.sunflower.adapters.MY_GARDEN_PAGE_INDEX
 import com.google.samples.apps.sunflower.adapters.PLANT_LIST_PAGE_INDEX
 import com.google.samples.apps.sunflower.adapters.SunflowerPagerAdapter
 import com.google.samples.apps.sunflower.databinding.FragmentViewPagerBinding
+import com.google.samples.apps.sunflower.utilities.Log
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -37,6 +38,7 @@ class HomeViewPagerFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        Log.i("")
         val binding = FragmentViewPagerBinding.inflate(inflater, container, false)
         val tabLayout = binding.tabs
         val viewPager = binding.viewPager

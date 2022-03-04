@@ -27,6 +27,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.navArgs
 import com.google.samples.apps.sunflower.adapters.GalleryAdapter
 import com.google.samples.apps.sunflower.databinding.FragmentGalleryBinding
+import com.google.samples.apps.sunflower.utilities.Log
 import com.google.samples.apps.sunflower.viewmodels.GalleryViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Job
@@ -46,6 +47,7 @@ class GalleryFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        Log.i("")
         val binding = FragmentGalleryBinding.inflate(inflater, container, false)
         context ?: return binding.root
 

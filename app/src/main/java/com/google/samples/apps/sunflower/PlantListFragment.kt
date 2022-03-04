@@ -28,6 +28,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
 import com.google.samples.apps.sunflower.adapters.PlantAdapter
 import com.google.samples.apps.sunflower.databinding.FragmentPlantListBinding
+import com.google.samples.apps.sunflower.utilities.Log
 import com.google.samples.apps.sunflower.viewmodels.PlantListViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -41,6 +42,7 @@ class PlantListFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        Log.i("")
         val binding = FragmentPlantListBinding.inflate(inflater, container, false)
         context ?: return binding.root
 

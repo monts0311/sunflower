@@ -20,6 +20,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil.setContentView
 import com.google.samples.apps.sunflower.databinding.ActivityGardenBinding
+import com.google.samples.apps.sunflower.utilities.Log
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -27,6 +28,7 @@ class GardenActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.i("")
         setContentView<ActivityGardenBinding>(this, R.layout.activity_garden)
     }
 }
